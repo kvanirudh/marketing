@@ -251,16 +251,45 @@ src="https://www.facebook.com/tr?id=1006143655400978&ev=PageView&noscript=1"
             </div>
         </div>
     </section>
-
-    <!-- 4. Call to Action (CTA) -->
-    <section class="cta-section reveal" id="cta">
-        <div class="cta-container">
-            <h2>Let’s Grow Your <span class="gradient-text">Brand</span></h2>
-            <p>Your content is pretty. So why isn't it converting?</p>
-            <a href="mailto:hello@kvanirudh.com" class="btn btn-primary btn-large">Get Started Now</a>
-        </div>
-        <div class="bg-shape shape-3"></div>
-    </section>
+     <section class="cta-section reveal" id="cta">
+    <div class="cta-container">
+        <h2>Let’s Grow Your <span class="gradient-text">Brand</span></h2>
+        <p>Your content is pretty. So why isn't it converting? Drop a message below!</p>
+        
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="hello@company.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="services-needed">What service are you looking for?</label>
+                <select id="services-needed" name="services">
+                    <option value="meta-ads">Google and Meta Ads</option>
+                    <option value="social-media">Social Media Management</option>
+                    <option value="web-design">Website Building</option>
+                    <option value="seo">SEO and GMB</option>
+                    <option value="content">Content Creation & Editing</option>
+                    <option value="branding">Branding & Logo Design</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your business goals..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+        </form>
+    </div>
+    <div class="bg-shape shape-3"></div>
+</section>
+    
 
     <!-- 7. Footer -->
     <footer>
