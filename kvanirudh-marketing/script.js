@@ -106,3 +106,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+// Google Ads Conversion Tracking for Form Submission
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    // 1. Fire the Google Ads Conversion Event
+    if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18241182315/9LO-CI3gzcMcEOu0ifpD'
+        });
+        console.log('Google Ads conversion tracked successfully.');
+    }
+
+    // 2. Custom "Thank You" behavior 
+    // (Optional: Prevent actual page reload to show a sleek success state instead)
+    event.preventDefault(); 
+    
+    // Example: Replace form contents with a clean thank you message
+    const container = document.querySelector('.cta-container');
+    container.innerHTML = `
+        <div style="text-align: center; padding: 40px 20px;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 15px;">Thank You! <span class="gradient-text">Message Sent.</span></h2>
+            <p style="font-size: 1.1rem; color: var(--text-muted);">I will get back to you shortly to discuss your business goals.</p>
+        </div>
+    `;
+});
