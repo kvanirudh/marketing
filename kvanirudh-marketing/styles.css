@@ -1,18 +1,24 @@
 :root {
-    --bg-dark: #050505;
-    --bg-card: rgba(255, 255, 255, 0.03);
-    --border-card: rgba(255, 255, 255, 0.08);
-    --border-card-hover: rgba(255, 255, 255, 0.2);
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0a0;
-    --accent-color: #4facfe;
-    --gradient-primary: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    --gradient-vibrant: linear-gradient(45deg, #7b2cbf, #4361ee, #4cc9f0);
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Inter', sans-serif;
-    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /* Change background from dark (#050505) to white */
+  --bg-dark: #ffffff; 
+  
+  /* Update card background and borders for a light theme */
+  --bg-card: rgba(0, 0, 0, 0.03); 
+  --border-card: rgba(0, 0, 0, 0.08); 
+  --border-card-hover: rgba(0, 0, 0, 0.2); 
+  
+  /* Change text from white (#ffffff) to dark charcoal so it's readable */
+  --text-primary: #121212; 
+  --text-secondary: #555555; 
+  
+  /* Keeping your brand colors/gradients as they are */
+  --accent-color: #4facfe; 
+  --gradient-primary: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); 
+  --gradient-vibrant: linear-gradient(45deg, #7b2cbf, #4361ee, #4cc9f0); 
+  --font-heading: 'Outfit', sans-serif; 
+  --font-body: 'Inter', sans-serif; 
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -111,7 +117,7 @@ h1, h2, h3, h4 {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(5, 5, 5, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-card);
 }
@@ -591,7 +597,7 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0b0f19; /* Deep elegant dark background */
+    background: #f8fafc;
     overflow: hidden;
 }
 
